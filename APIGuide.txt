@@ -1,0 +1,49 @@
+Database Table
+- Categories
+- Menu items
+- Users
+- Vendors
+
+Database Column
+Categories {
+    id,
+    name,
+    description
+}
+Menu Items {
+    id,
+    vendor_id,
+    cetegory_id,
+    name,
+    description,
+    price,
+    image
+}
+Users {
+    id,
+    name,
+    email,
+    password,
+    role,
+    vendor_id
+}
+Vendors {
+    id,
+    name,
+    description,
+    logo,
+    created_at
+}
+
+Endpoint:
+/menu
+/menu/:id
+
+/login
+/sign-up
+
+/vendors
+/vendors/:id
+
+/transaction
+/transaction/:id
