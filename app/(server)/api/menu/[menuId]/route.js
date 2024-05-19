@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 import getPool from "@/app/(server)/db";
 
-export async function GET({ params }) {
-    const userId = params.id
+export async function GET(request, { params }) {
+    const userId = params.menuId
     try {
         const pool = getPool()
         const { rows } = await pool.query(`SELECT * FROM menu_items WHERE id = ${userId}`)

@@ -1,4 +1,3 @@
-// Import necessary dependencies
 import { hash } from 'bcrypt';
 import { NextResponse } from 'next/server';
 import getPool from '../../db';
